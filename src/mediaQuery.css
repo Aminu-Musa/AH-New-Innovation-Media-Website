@@ -1,0 +1,119 @@
+/* @media (max-width: 360px) {
+  .main-header .container {
+    padding: 10px 0;
+  }
+  .lang-button {
+    display: none;
+    height: 40px;
+  }
+} */
+
+/* @media (max-width: 430px) {
+  .main-header {
+    padding: 10px 0;
+    .container {
+      height: 40px;
+    }
+  }
+  .lang-button {
+    display: none;
+  }
+} */
+
+@media (max-width: 791px) {
+  .hamburger {
+    display: block;
+    z-index: 9999 !important;
+  }
+  .top-header-right-social {
+    display: none;
+  }
+
+  .main-header {
+    /* display: none; */
+    .container {
+      position: relative !important;
+    }
+  }
+
+  .open-nav {
+    display: block !important;
+    transform: translateX(0%) !important;
+  }
+
+  .navbar {
+    display: none;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-120%);
+    transition: 150ms ease-in-out;
+    z-index: 9999;
+    background: transparent;
+
+    .main-nav-menu {
+      background: #ffffff;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px 0;
+      transform: translateY(30%);
+    }
+  }
+}
+
+/* FOOTER */
+@media (max-width: 1088px) {
+  .foot-col {
+    padding: 0 !important;
+  }
+  footer {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+  }
+.newsletter{
+  column-span: 1/9 !important;
+}
+
+}
+
+
+
+
+/* 320px — 480px: Mobile devices. */
+@media (min-width: 481px) {
+  .main-header .container {
+    padding: 10px 0;
+  }
+  .lang-button {
+    height: 40px;
+  }
+  
+}
+/* 481px — 768px: iPads, Tablets. */
+@media (min-width: 768px) {
+  
+}
+
+/* 769px — 1024px: Small screens, laptops. */
+@media(min-width: 1024px) {
+  
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+@media (min-width: 1200px) {
+  
+}
+
+/* 1201px and more — Extra large screens, TV. */
+@media (min-width: 1201px) {
+  
+}
