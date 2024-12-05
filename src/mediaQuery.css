@@ -1,3 +1,6 @@
+.pb{
+  padding-bottom: 20px;
+}
 
 @media (max-width: 791px) {
   .hamburger {
@@ -8,10 +11,11 @@
     display: none;
   }
 
+
   .main-header {
     /* display: none; */
     .container {
-      position: relative !important;
+      /* position: relative !important; */
     }
   }
 
@@ -110,7 +114,7 @@
 .foot-col{
   padding: 0 !important;
 }
-}
+}}
 
 /* 481px — 768px: iPads, Tablets. */
 @media (min-width: 768px) {

@@ -8,7 +8,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import {NavLink, useNavigate } from "react-router-dom";
-import { RiMenuFold2Line } from "react-icons/ri";
+import { AiOutlineMenu } from "react-icons/ai";
+
 
 import logo from "../../src/img/AH_logo.svg";
 
@@ -104,8 +105,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={slide_down_menu ? "main-header fixed" : " main-header"}>
-        <div className="container">
+      <div className={slide_down_menu ? "main-header fixed " : " main-header"}>
+        <div className={show_menu ? "container pb" : "container "}>
           <div className="logo">
           
               <img src={logo} alt="logo image"  onClick={()=>{navigate('/')}}/>
@@ -136,7 +137,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hamburger" onClick={show_hide_menu}>
-            <RiMenuFold2Line size={25} />
+            <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
