@@ -35,7 +35,7 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: normal;
   color: #757f95;
   line-height: 1.8;
@@ -235,12 +235,12 @@ button {
 .hamburger {
   display: none;
   cursor: pointer;
-  svg{
+  svg {
     color: #171718;
   }
 }
 
-.fixed{
+.fixed {
   position: fixed;
   background: #fff;
   top: 0;
@@ -260,7 +260,6 @@ button {
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    
 
     .active {
       color: #ff4328;
@@ -506,8 +505,214 @@ footer {
 }
 /* FOOTER END */
 
+/* CONTACT START */
+.site-breadcrumb {
+  background: linear-gradient(rgba(0, 0, 0, 0.424), rgba(0, 0, 0, 0.54)),
+    url("./img/contactBg.jpg");
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-position: center;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #fff !important;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      li a {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+
+        &.active {
+          color: #ff4328 !important;
+          &::before {
+            content: "//";
+            margin-right: 10px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact_us_section {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+    .address-col {
+      flex-basis: 35%;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .address-row {
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 60px 1fr;
+        align-items: center;
+
+        .address-icon {
+          height: 60px;
+          width: 60px;
+          border-radius: 5px;
+          padding: 5px;
+        }
+      }
+    }
+
+    .address-location {
+      border: 2px solid #0084ff;
+    }
+    .contact-icon {
+      background: #0084ff;
+    }
+
+    .call-us {
+      border: 2px solid #37b546;
+    }
+    .call-us-icon {
+      background: #37b546;
+    }
+
+    .email-us {
+      border: 2px solid #fd4a36;
+    }
+    .email-us-icon {
+      background: #fd4a36;
+    }
+
+    .office-open {
+      border: 2px solid #ffb400;
+    }
+    .office-open-icon {
+      background: #ffb400;
+    }
+
+    .contact-address {
+      display: grid;
+      place-content: center;
+      height: 100%;
+      border-radius: 5px;
+      svg {
+        fill: #fff;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 22px;
+    }
+  }
+  .message-col {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px 20px;
+    flex-basis: 60%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 15px 10px;
+      border-radius: 5px;
+      border: 1px solid #757f95;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    input:focus,
+    textarea:focus {
+      border: 1px solid #fd4a36;
+    }
+
+    textarea {
+      resize: vertical;
+      font-family: "Roboto", "Sans-serif";
+    }
+  }
+
+  .name-email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .send-btn {
+    background: #FF4328;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    button {
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      padding: 7px 15px;
+    }
+    .send-icon {
+      height: 40px;
+      width: 40px;
+      display: grid;
+      place-content: center;
+      padding: 10px;
+      border-radius: 50%;
+      background: #1A1E5D;
+    }
+
+  }
+
+  .send-btn .send-icon:hover{
+
+  }
+}
+
+.google-map-iframe{
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: none;
+}
 
 
+/* CONTACT END */
 
 /* ANIMATION START */
 @keyframes slide-down {
@@ -520,5 +725,3 @@ footer {
   }
 }
 /* ANIMATION END */
-
-

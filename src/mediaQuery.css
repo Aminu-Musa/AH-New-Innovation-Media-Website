@@ -11,13 +11,10 @@
     display: none;
   }
 
-
-  .main-header {
-    /* display: none; */
-    .container {
-      /* position: relative !important; */
-    }
+  .name-email {
+    grid-template-columns:1fr !important;
   }
+
 
   .open-nav {
     display: block !important;
@@ -117,12 +114,27 @@
 }}
 
 /* 481px — 768px: iPads, Tablets. */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .name-email {
+    grid-template-columns:1fr !important;
+  }
+
 }
 
 /* 769px — 1024px: Small screens, laptops. */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
+  .name-email {
+    grid-template-columns:1fr !important;
+  }
+  .contact_us_section {
+    .container {
+      flex-direction: column;
+    }
 }
+
+}
+
+
 
 /* 1025px — 1200px: Desktops, large screens. */
 @media (min-width: 1200px) {
