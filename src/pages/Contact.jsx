@@ -132,7 +132,10 @@ const Contact = () => {
         </div>
       </div>
         <div className="google-location-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3938.6738798128085!2d7.176370573145988!3d9.183861086549497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1733586533178!5m2!1sen!2sng"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="google-map-iframe"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1LWS_1EKBJIJsJzAFguLLrzX1Z-9nNEo&hl=en&ehbc=2E312F" className="google-map-iframe"></iframe>
+
+
+        {/* <iframe src="https://www.google.com/maps/d/embed?mid=1LWS_1EKBJIJsJzAFguLLrzX1Z-9nNEo&hl=en&ehbc=2E312F" className="google-map-iframe"></iframe> */}
         </div>
     </>
   );

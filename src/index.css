@@ -678,6 +678,7 @@ footer {
     display: inline-flex;
     align-items: center;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out !important;
     button {
       font-size: 1rem;
       font-weight: 500;
@@ -699,7 +700,8 @@ footer {
 
   }
 
-  .send-btn .send-icon:hover{
+  .send-btn:hover {
+    background: #000;
 
   }
 }
@@ -707,8 +709,12 @@ footer {
 .google-map-iframe{
   display: block;
   width: 100%;
-  height: 450px;
+  height: 500px;
   border: none;
+
+  iframe{
+    zoom: none;
+  }
 }
 
 
