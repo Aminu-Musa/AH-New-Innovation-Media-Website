@@ -45,6 +45,13 @@
       transform: translateY(30%);
     }
   }
+
+
+  .about-us {
+    .container {
+      flex-direction: column;
+      gap: 70px;
+    }}
 }
 
 /* FOOTER */

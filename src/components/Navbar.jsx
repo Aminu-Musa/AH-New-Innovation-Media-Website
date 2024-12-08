@@ -114,22 +114,22 @@ const Navbar = () => {
           </div>
           <div className={show_menu ? "navbar open-nav": "navbar "}>
             <ul className="main-nav-menu">
-              <li>
+              <li onClick={ () => setShow_menu(false)}>
                 <NavLink to="/" class="navlink">
                   Home{" "}
                 </NavLink>
               </li>
-              <li>
+              <li onClick={ () => setShow_menu(false)}>
                 <NavLink to="services" class="navlink">
                   Services{" "}
                 </NavLink>
               </li>
-              <li>
+              <li onClick={ () => setShow_menu(false)}>
                 <NavLink to="about" class="navlink">
                   About{" "}
                 </NavLink>
-              </li>
-              <li>
+              </li >
+              <li onClick={ () => setShow_menu(false)}>
                 <NavLink to="contact" class="navlink">
                   Contact{" "}
                 </NavLink>

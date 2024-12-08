@@ -9,7 +9,7 @@ const Contact = () => {
   document.title = "Contact | A&H";
   return (
     <>
-      <div className="site-breadcrumb">
+      <div className="site-breadcrumb-contact-us">
         <div className="container ">
           <h2>Contact Us</h2>
           <ul>
