@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,19 +8,20 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Preloader from "./components/Preloader";
 
-useEffect;
+
 
 const App = () => {
-  useEffect(() => {
-    window.onload = () => {
-      const preloader = document.querySelector(".preloader");
-      preloader.remove();
-    };
-  });
+
+  const [preloading, setPreloading] = useState(true);
+
+  window.addEventListener("load", () => { setPreloading(false); });
+
   return (
     <>
-      <Preloader />
-      <Router>
+      
+     {
+       preloading ? <Preloader /> : (
+        <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,6 +31,8 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+       )
+     }
     </>
   );
 };

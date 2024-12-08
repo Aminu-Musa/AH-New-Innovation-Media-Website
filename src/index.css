@@ -189,7 +189,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  z-index: 999;
+  z-index: 500;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   li {
@@ -285,7 +285,7 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 400;
   animation: slide-down 0.7s;
   box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.17);
 }
@@ -862,7 +862,8 @@ p{
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 9999 !important;
+  overflow: hidden;
 }
 
 .loader {
