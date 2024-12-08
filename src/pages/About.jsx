@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import ready_work_img from "../img/ready-to-work-about-img.jpg";
 import SiteHeading from "../components/SiteHeading";
+import Preloader from "../components/Preloader";
 
 const About = () => {
   document.title = "About | A&H";
