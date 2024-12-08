@@ -547,7 +547,7 @@ footer {
 /* CONTACT START */
 .site-breadcrumb-contact-us {
   background: linear-gradient(rgba(0, 0, 0, 0.424), rgba(0, 0, 0, 0.54)),
-    url("./img/contactBg.jpg");
+    url("./img/contactBg2.jpg");
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 140px;
@@ -760,7 +760,7 @@ footer {
 
 .site-breadcrumb-about-us {
   background: linear-gradient(rgba(0, 0, 0, 0.424), rgba(0, 0, 0, 0.54)),
-    url("./img/aboutBG2.jpg");
+    url("./img/aboutBG.jpg");
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 140px;
