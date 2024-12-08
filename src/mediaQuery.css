@@ -51,7 +51,12 @@
     .container {
       flex-direction: column;
       gap: 70px;
-    }}
+    }
+}
+
+.about-text{
+  font-size: 2rem;
+}
 }
 
 /* FOOTER */

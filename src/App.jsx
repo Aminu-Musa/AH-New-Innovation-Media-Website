@@ -14,7 +14,7 @@ const App = () => {
 
   const [preloading, setPreloading] = useState(true);
 
-  window.addEventListener("load", () => { setPreloading(false); });
+  setTimeout(() => { setPreloading(false); }, 3000);
 
   return (
     <>
